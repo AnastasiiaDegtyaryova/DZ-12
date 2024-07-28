@@ -1,5 +1,6 @@
 package org.example;
 
+
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 
@@ -12,6 +13,7 @@ public class WomanTest {
         Woman woman = new Woman("FirstName", "LastName", age, 1000.0);
         assertEquals(expectedRetirementStatus, woman.isRetired());
     }
+
 
     @DataProvider
     public Object[][] provideRetirementData() {
